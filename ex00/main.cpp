@@ -1,5 +1,7 @@
-
-int main( void ) 
+#include "whatever.hpp"
+#include <string>
+#include <iostream>
+int main( void )
 {
 int a = 2;
 int b = 3;
