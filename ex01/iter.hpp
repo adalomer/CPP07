@@ -13,12 +13,12 @@ void iter(T *array, size_t length, F fnc)
 	}
 	else if(!fnc)
 	{
-		std::cout << "No function to given!"
+		std::cout << "No function to given!"<< std::endl;
 		return;
 	}
-	for(size_t  a = 1;  a < length; a++)
+	for(size_t  a = 0;  a < length; a++)
 	{
-		fnc(array[i]);
+		fnc(array[a]);
 	}
 
 }
