@@ -1,5 +1,5 @@
 NAME = iter
-SRCS = main.cpp iter.cpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 CC = c++
 RM = rm -f
