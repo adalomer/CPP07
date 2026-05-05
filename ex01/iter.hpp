@@ -1,31 +1,30 @@
-#ifndef	İTER_HPP
-#define İTER_HPP
+#ifndef ITER_HPP
+#define ITER_HPP
 
 #include <iostream>
 
-template <typename T,typename F>
-void iter(T *array, int length, F fnc)
+template<typename T,typename F>
+void iter(T *array,int length,F fnc)
 {
-	if( !array)
+	if(!array) 
 	{
-		std::cout << "No array adress!"<< std::endl;
+		std::cout << "No array adress!" << std::endl;
 		return;
 	}
-	else if(!fnc)
+	else if(!fnc) 
 	{
-		std::cout << "No function to given!"<< std::endl;
+		std::cout << "No function to given!" << std::endl;
 		return;
 	}
-	else if(length <= 0)
+	else if(length <= 0)  
 	{
-		std::cout << "Given number cant equal 0 or negative"<< std::endl;
+		std::cout << "Given number cant equal 0 or negative" << std::endl;
 		return;
 	}
-	for(size_t  a = 0;  a < length; a++)
+	for(int a = 0; a < length; a++) 
 	{
 		fnc(array[a]);
 	}
-
 }
 
 #endif

@@ -10,9 +10,11 @@ int main() {
 		std::cout << a[i] << " ";
 	std::cout << std::endl;
 
-	try {
+	try 
+	{
 		std::cout << a[10] << std::endl;
-	} catch (const std::exception& e) {
+	} catch (const std::exception& e) 
+	{
 		std::cout << "Exception: " << e.what() << std::endl;
 	}
 
