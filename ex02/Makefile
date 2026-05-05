@@ -1,5 +1,5 @@
 NAME = Array
-SRCS = main.cpp Array.hpp
+SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
 CC = c++
 RM = rm -f
@@ -11,6 +11,9 @@ $(NAME): $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
+
+fclean: clean
+	$(RM) $(NAME)
 
 re: clean all
 
