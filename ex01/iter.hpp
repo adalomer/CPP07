@@ -4,7 +4,7 @@
 #include <iostream>
 
 template <typename T,typename F>
-void iter(T *array, size_t length, F fnc)
+void iter(T *array, int length, F fnc)
 {
 	if( !array)
 	{
@@ -14,6 +14,11 @@ void iter(T *array, size_t length, F fnc)
 	else if(!fnc)
 	{
 		std::cout << "No function to given!"<< std::endl;
+		return;
+	}
+	else if(length <= 0)
+	{
+		std::cout << "Given number cant equal 0 or negative"<< std::endl;
 		return;
 	}
 	for(size_t  a = 0;  a < length; a++)
