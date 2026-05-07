@@ -1,13 +1,13 @@
 NAME = Array
 SRCS = main.cpp
 OBJS = $(SRCS:.cpp=.o)
-CC = c++
+CXX = c++
 RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(CC) $(OBJS) -o $(NAME)
+	$(CXX) $(OBJS) -o $(NAME)
 
 clean:
 	$(RM) $(OBJS)
