@@ -26,5 +26,14 @@ void iter(T *array,int length,F fnc)
 		fnc(array[a]);
 	}
 }
+template <typename T>
+void print(T const &x) 
+{
+	std::cout << x << " "; 
+}
+void multiply(int &n) 
+{ 
+	n *= 2; 
+}
 
 #endif

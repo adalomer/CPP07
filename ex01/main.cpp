@@ -1,17 +1,6 @@
 #include "iter.hpp"
 #include <iostream>
 
-template <typename T>
-void print(T const &x) 
-{
-	std::cout << x << " "; 
-}
-
-void multiply(int &n) 
-{ 
-	n *= 2; 
-}
-
 int main() {
     int arr[] = {100, 200, 300, 400, 500};
     std::string str[] = {"A", "B", "C"};
